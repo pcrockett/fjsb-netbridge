@@ -9,7 +9,7 @@ Usage
 -----
 
 ```bash
-git clone https://github.com/pcrockett/fjsb-netbridge
+git clone https://github.com/pcrockett/fjsb-netbridge.git
 cd fjsb-netbridge
 
 # Set up config file
