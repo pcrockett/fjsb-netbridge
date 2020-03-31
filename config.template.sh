@@ -11,4 +11,5 @@ set -Eeuo pipefail
 
 export INTERFACE_NAME="fjsb0"
 export INTERFACE_IP="10.192.72.1/24"
+export INTERFACE_MTU="1500"
 export OUT_INTERFACE="wg0"

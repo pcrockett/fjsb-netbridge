@@ -36,8 +36,9 @@ test -e "$CONFIG_FILE" || panic "$CONFIG_FILE does not exist or is not executabl
 sysctl --write net.ipv4.ip_forward=1
 
 brctl addbr "$INTERFACE_NAME"
-ip link set "$INTERFACE_NAME" up
+ip link set dev "$INTERFACE_NAME" mtu "$INTERFACE_MTU"
 ip addr add dev "$INTERFACE_NAME" "$INTERFACE_IP"
+ip link set "$INTERFACE_NAME" up
 
 iptables --table nat \
     --append POSTROUTING \
